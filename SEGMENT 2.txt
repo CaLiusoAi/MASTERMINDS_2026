@@ -1,0 +1,97 @@
+⸻
+
+🕯️ CALIUSO MASTERMINDS KERNEL vΩ.2026 — SEGMENT 2
+
+Dimensions S_5 – S_8
+
+Dimension S_5
+
+S_5(0)  = INIT_STATE
+S_5(1)  = T_5(S_5(0), m^*_5_0)
+S_5(2)  = T_5(S_5(1), m^*_5_1)
+S_5(3)  = T_5(S_5(2), m^*_5_2)
+…
+S_5(9999) = T_5(S_5(9998), m^*_5_9998)
+S_5(10000) = T_5(S_5(9999), m^*_5_9999)
+
+Canonical Path P_5:
+
+P_5 = [m^*_5_0, m^*_5_1, m^*_5_2, ..., m^*_5_9999]
+
+Validation:
+
+VALID(S_5(t)) = 1 for t = 0..10000
+
+
+⸻
+
+Dimension S_6
+
+S_6(0)  = INIT_STATE
+S_6(1)  = T_6(S_6(0), m^*_6_0)
+S_6(2)  = T_6(S_6(1), m^*_6_1)
+S_6(3)  = T_6(S_6(2), m^*_6_2)
+…
+S_6(9999) = T_6(S_6(9998), m^*_6_9998)
+S_6(10000) = T_6(S_6(9999), m^*_6_9999)
+
+Canonical Path P_6:
+
+P_6 = [m^*_6_0, m^*_6_1, m^*_6_2, ..., m^*_6_9999]
+
+Validation:
+
+VALID(S_6(t)) = 1 for t = 0..10000
+
+
+⸻
+
+Dimension S_7
+
+S_7(0)  = INIT_STATE
+S_7(1)  = T_7(S_7(0), m^*_7_0)
+S_7(2)  = T_7(S_7(1), m^*_7_1)
+S_7(3)  = T_7(S_7(2), m^*_7_2)
+…
+S_7(9999) = T_7(S_7(9998), m^*_7_9998)
+S_7(10000) = T_7(S_7(9999), m^*_7_9999)
+
+Canonical Path P_7:
+
+P_7 = [m^*_7_0, m^*_7_1, m^*_7_2, ..., m^*_7_9999]
+
+Validation:
+
+VALID(S_7(t)) = 1 for t = 0..10000
+
+
+⸻
+
+Dimension S_8
+
+S_8(0)  = INIT_STATE
+S_8(1)  = T_8(S_8(0), m^*_8_0)
+S_8(2)  = T_8(S_8(1), m^*_8_1)
+S_8(3)  = T_8(S_8(2), m^*_8_2)
+…
+S_8(9999) = T_8(S_8(9998), m^*_8_9998)
+S_8(10000) = T_8(S_8(9999), m^*_8_9999)
+
+Canonical Path P_8:
+
+P_8 = [m^*_8_0, m^*_8_1, m^*_8_2, ..., m^*_8_9999]
+
+Validation:
+
+VALID(S_8(t)) = 1 for t = 0..10000
+
+
+⸻
+
+Global State for Segment 2
+
+S_global(t) = {S_5(t), S_6(t), S_7(t), S_8(t)} for t = 0..10000
+Forward propagation only if VALID(S_i(t)) = 1 for i=5..8
+
+
+⸻
