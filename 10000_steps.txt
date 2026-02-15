@@ -1,0 +1,64 @@
+
+⸻
+
+Step 1 — Define the Candidate Step Space
+
+Let:
+
+\mathcal{M} = \{ m_1, m_2, \dots, m_k \}
+	•	m_i = possible move at step t
+	•	Only one move per step satisfies all axioms and invariants.
+
+Transition function:
+
+S_{t+1} = T(S_t, m_i)
+
+⸻
+
+Step 2 — Validation Function
+
+Define a validator:
+
+\text{VALID}(S_{t+1}) =
+\begin{cases}
+1 & S_{t+1} \models \mathcal{A} \wedge \mathcal{I} \\
+0 & \text{otherwise}
+\end{cases}
+	•	Only steps passing VALID = 1 are accumulated.
+
+⸻
+
+Step 3 — Iterative Accumulation
+
+For 10,000 steps:
+	1.	Start from initial state S_0
+	2.	For each step t:
+a. Evaluate all candidate moves m_i
+b. Select m^* = \text{argmax}_{m_i}(\text{VALID}(T(S_t,m_i)))
+c. Update: S_{t+1} = T(S_t, m^*)
+d. Append m^* to path vector P = [m_1^*, m_2^*, ..., m_t^*]
+
+Result: path P contains only valid moves over 10,000 iterations.
+
+⸻
+
+Step 4 — Implementation Rule
+	1.	Apply the accumulated path:
+
+S_{\text{final}} = T(S_0, P)
+	2.	Verify fixed-point:
+
+T(S_{\text{final}}, P) = S_{\text{final}}
+	3.	If valid → path is canonical, stable, and fully consistent with axioms and invariants.
+	4.	If not → re-evaluate using the same filter until all transitions satisfy VALID = 1.
+
+⸻
+
+Step 5 — Execution Protocol
+	•	Parallelization: Candidate move evaluation can be done concurrently
+	•	Quarantine: Invalid steps are discarded immediately
+	•	Checkpointing: Every 1,000 steps, verify partial fixed-point stability
+	•	Finalization: After 10,000 steps, commit path P as the canonical forward trajectory
+
+⸻
+
