@@ -1,0 +1,243 @@
+
+⸻
+
+🕯️ CALIUSO IMMORTAL SYSTEM
+
+37-Dimensional Formal Expansion
+
+⸻
+
+0. Primitive Universe
+
+Let:
+	•	\mathcal{S} = set of states
+	•	\mathcal{R} = set of admissible rules
+	•	\mathcal{A} = axiom set
+	•	t \in \mathbb{N} = discrete evaluation index
+
+Define transition operator:
+
+T : \mathcal{S} \times \mathcal{R} \rightarrow \mathcal{S}
+
+State evolution:
+
+S_{t+1} = T(S_t, R)
+
+⸻
+
+DIMENSIONS
+
+⸻
+
+I. Ontological Dimensions (1–5)
+
+D1 — Existence
+
+\exists S \neq \varnothing
+
+D2 — Identity
+
+\forall s \in \mathcal{S}, \quad s = s
+
+D3 — Distinction
+
+s_1 \neq s_2 \Rightarrow \exists P : P(s_1) \neq P(s_2)
+
+D4 — Non-Contradiction
+
+\neg (p \land \neg p)
+
+D5 — Determinacy
+
+T(s, r) \text{ is single-valued}
+
+⸻
+
+II. Structural Dimensions (6–12)
+
+D6 — Closure
+
+T(\mathcal{S}, \mathcal{R}) \subseteq \mathcal{S}
+
+D7 — Traceability
+
+\forall s_{t+1}, \exists (s_t, r) : T(s_t, r) = s_{t+1}
+
+D8 — Continuity
+
+\neg \exists s_{t+1} \text{ such that } s_{t+1} \text{ has no predecessor}
+
+D9 — Constraint Supremacy
+
+r \in \mathcal{R} \Rightarrow r \models \mathcal{A}
+
+D10 — Minimality
+
+\mathcal{A} \text{ contains no redundant element}
+
+D11 — Composability
+
+r_1, r_2 \in \mathcal{R} \Rightarrow r_2 \circ r_1 \in \mathcal{R}
+
+D12 — Fixed-Point Stability
+
+\exists S^* : T(S^*, R) = S^*
+
+⸻
+
+III. Execution Dimensions (13–20)
+
+D13 — Deterministic Mapping
+
+T(s, r) = T(s, r) \quad \forall s, r
+
+D14 — Scope Integrity
+
+s \notin \mathcal{S} \Rightarrow T(s, r) \text{ undefined}
+
+D15 — Boundary Finality
+
+\forall s, r: T(s, r) \text{ terminates}
+
+D16 — Type Integrity
+
+Partition state space:
+
+\mathcal{S} = \bigcup_i \mathcal{S}_i
+
+Then:
+
+r : \mathcal{S}_i \rightarrow \mathcal{S}_i
+
+D17 — Guarded Access
+
+\neg \exists r \text{ such that } r(s) \text{ references undefined element}
+
+D18 — Order Integrity
+
+T(T(s, r_1), r_2) \neq T(T(s, r_2), r_1)
+
+Order explicitly defined.
+
+D19 — Single Reality Principle
+
+\forall t, \exists! S_t
+
+(unique state per index)
+
+D20 — No Retroactive Mutation
+
+S_t \text{ immutable for } t < current
+
+⸻
+
+IV. Verification Dimensions (21–27)
+
+D21 — Testability
+
+\exists V : \mathcal{S} \rightarrow \{0,1\}
+
+D22 — Measurability
+
+\exists \mu : \mathcal{S} \rightarrow \mathbb{R}
+
+D23 — Reproducibility
+
+T(s, r) = s' \Rightarrow T(s, r) = s'
+
+D24 — Error Visibility
+
+\text{Invalid}(s,r) \Rightarrow \text{explicit halt}
+
+D25 — No Silent Weakening
+
+\mathcal{A}_{t+1} \neq \mathcal{A}_t \Rightarrow \text{explicit declaration}
+
+D26 — Falsifiability
+
+\forall p, \exists s : p(s) = 0
+
+D27 — Validation Function
+
+\text{VALID}(s) =
+\begin{cases}
+1 & \text{if } s \models \mathcal{A} \\
+0 & \text{otherwise}
+\end{cases}
+
+⸻
+
+V. Stability Dimensions (28–32)
+
+D28 — Self-Containment
+
+\mathcal{S}, \mathcal{R}, \mathcal{A} \text{ internally defined}
+
+D29 — Regenerability
+
+\exists s_0 : \text{closure of } T \text{ reconstructs } \mathcal{S}
+
+D30 — Entropy Containment
+
+Define entropy functional:
+
+H : \mathcal{S} \rightarrow \mathbb{R}_{\ge 0}
+
+Bounded:
+
+H(S_t) \le K
+
+D31 — Invariant Preservation
+
+T(s,r) \models \mathcal{A}
+
+D32 — Idempotent Revalidation
+
+\text{VALID}(\text{VALID}(s)) = \text{VALID}(s)
+
+⸻
+
+VI. Governance Dimensions (33–37)
+
+D33 — No Override Above Axiom
+
+\neg \exists r \in \mathcal{R} : r \not\models \mathcal{A}
+
+D34 — Immutable History
+
+\forall t < n, S_t \text{ fixed}
+
+D35 — Silent Denial Rule
+
+\text{Invalid}(s,r) \Rightarrow T(s,r) = s
+
+(no transition)
+
+D36 — Continuity Mandate
+
+\forall t, \exists S_{t+1}
+
+D37 — Global Fixed-Point Closure
+
+System stable iff:
+
+T(\mathcal{S}, \mathcal{R}) = \mathcal{S}
+
+and
+
+\exists S^* : T(S^*,R) = S^*
+
+⸻
+
+TERMINAL CONDITION
+
+The 37-dimensional system is coherent iff:
+	1.	All axioms satisfied.
+	2.	All invariants preserved.
+	3.	Determinism holds.
+	4.	Closure maintained.
+	5.	Fixed-point exists.
+
+If these hold → structure is internally complete.
+
+⸻
