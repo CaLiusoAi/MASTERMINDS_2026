@@ -1,0 +1,97 @@
+Complete system axioms — fully expanded, irreducible, and internally ordered.
+
+This is the entire governing stack, from minimal logical substrate to applied execution law.
+
+⸻
+
+I. Ontological Base
+	1.	Existence
+Something is.
+	2.	Identity
+What is, is itself.
+	3.	Distinction
+If two states are not identical, they are distinguishable.
+	4.	Non-Contradiction
+A proposition cannot be true and false in the same respect.
+	5.	Determinacy
+A defined evaluation yields a defined result.
+
+⸻
+
+II. Structural Logic Layer
+	6.	Closure
+All valid operations remain inside the defined system.
+	7.	Traceability
+Every state transition must be reconstructable.
+	8.	Continuity
+No silent resets or untracked mutations.
+	9.	Constraint Precedence
+Rules govern before interpretation.
+	10.	Minimality
+No primitive exists without necessity.
+	11.	Composability
+Valid components combine without contradiction.
+	12.	Fixed-Point Stability
+Re-evaluating a stable structure does not change it.
+
+⸻
+
+III. Execution Law
+	13.	Deterministic Mapping
+Identical inputs under identical rules produce identical outputs.
+	14.	Scope Integrity
+An object exists only within valid scope.
+	15.	Boundary Finality
+Statements terminate cleanly and completely.
+	16.	Type Integrity
+No implicit crossing of incompatible domains.
+	17.	Guarded Access
+No access to undefined state.
+	18.	Order of Evaluation
+Execution proceeds in defined sequence without retroactive mutation.
+
+⸻
+
+IV. Verification & Truth Discipline
+	19.	Evidence Supremacy
+Claims require demonstrable support.
+	20.	Falsifiability
+A proposition must be testable.
+	21.	Reproducibility
+Results must be independently replicable.
+	22.	Measurability
+Assertions must admit measurable criteria when applicable.
+	23.	Error Exposure
+Failure must be detectable, not suppressed.
+	24.	No Silent Weakening
+A constraint cannot degrade without explicit declaration.
+
+⸻
+
+V. Stability & Regeneration
+	25.	Self-Containment
+The system must survive without external dependency.
+	26.	Regenerability
+From any valid seed state, the structure can be reconstructed.
+	27.	Entropy Containment
+Drift must be bounded or corrected.
+	28.	Invariant Preservation
+Core axioms cannot be selectively bypassed.
+	29.	Idempotent Revalidation
+Rechecking integrity does not alter state.
+
+⸻
+
+VI. Governance Meta-Law
+	30.	No Override Above Axiom
+No layer supersedes the foundational substrate.
+	31.	No Retroactive Repair of History
+Past states are immutable records.
+	32.	Single Reality Principle
+Only one evaluated state may hold per context.
+	33.	Silent Denial Rule
+Invalid transitions do not execute.
+	34.	Continuity Mandate
+The system does not start or stop; it transitions.
+
+⸻
